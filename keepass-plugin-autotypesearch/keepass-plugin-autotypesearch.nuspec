@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>keepass-plugin-autotypesearch</id>
+    <title>AutoTypeSearch</title>
+    <version>1.0</version>
+    <authors>alexvallat</authors>
+    <owners>alexvallat</owners>
+    <summary>AutoType Quick Search plugin for KeePass</summary>
+    <description>
+This plugin for [KeePass 2](https://keepass.info/) to provide a quick searching capability as
+an enhancement to the global auto-type system. If a global auto-type is requested, but no matching
+entry for the active window is found, this plugin will show a quick as-you-type search window which
+lets you to easily pick the entry to auto-type.
+    </description>
+    <packageSourceUrl>https://github.com/sirAndros/ChocolateyPackages/tree/master/keepass-plugin-autotypesearch</packageSourceUrl>
+    <projectUrl>https://keepass.info/plugins.html#atsearch</projectUrl>
+    <projectSourceUrl>https://sourceforge.net/projects/autotypesearch</projectSourceUrl>
+    <tags>keepass plugin search password-manager</tags>
+    <copyright>© alexvallat</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Compatibility with KeePass 2.42. For versions of KeePass prior to 2.42, use an 0.X version.</releaseNotes>
+    <dependencies>
+      <dependency id="keepass" version="[2.42, 3.0)" />
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
