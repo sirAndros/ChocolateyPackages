@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>keepass-plugin-enhancedentryview</id>
+    <title>KPEnhancedEntryView</title>
+    <version>2.4.1</version>
+    <authors>alexvallat</authors>
+    <owners>alexvallat</owners>
+    <summary>An enhanced entry view panel for KeePass</summary>
+    <description>
+This is a plugin for [KeePass 2](https://keepass.info/) to provide an enhanced entry view.
+For the rationale and design behind this project, see the forum post linked to as the homepage
+
+Features
+--------
+
+- All fields (standard and custom string) shown in a grid view
+- Field values and, for custom strings, names, are in place-editable
+- Easy to add new custom fields through in-place editing
+- Protected (password) fields can be edited, or their value shown through the in-place editor
+- Attachments can be dragged and dropped to and from files in Windows Explorer
+- Metadata properties shown on a separate tab to details field
+- Original textual entry view still available, through the "All Text" tab
+- Multiple selected entries can be edited together to perform mass changes
+    </description>
+    <packageSourceUrl>https://github.com/sirAndros/ChocolateyPackages/tree/master/keepass-plugin-enhancedentryview</packageSourceUrl>
+    <projectUrl>https://keepass.info/plugins.html#kpenhentryview</projectUrl>
+    <projectSourceUrl>https://sourceforge.net/projects/kpenhentryview</projectSourceUrl>
+    <tags>keepass plugin password-manager</tags>
+    <copyright>© alexvallat</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Fixed bug with right clicking on empty area in multi-select field</releaseNotes>
+    <dependencies>
+      <dependency id="keepass" version="[2.42, 3.0)" />
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
